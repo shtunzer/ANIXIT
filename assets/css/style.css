@@ -1,0 +1,116 @@
+html{
+    box-sizing: border-box;
+}
+
+body{
+    background: #060A16;
+}
+
+*,*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1290px;
+    padding: 0 10px;
+}
+
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.header{
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.header__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+}
+
+.header__list{
+    display: flex;
+    align-items: center;
+}
+
+.header__list-item{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.header__list-item + .header__list-item{
+    margin-left: 60px;
+}
+
+.header__auth-btn:nth-child(2){
+    margin-left: 40px;
+    padding: 5px 9px;
+    background: #EE8509;
+    border-radius: 6px;
+}
+
+.header__auth-btn{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.firstScreen{
+    background-image: url(../images/fs-bg.jpg);
+    background-size: cover;
+    background-position: left;
+    padding-bottom: 85px;
+}
+
+.firstScreen-btndownload{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+    padding: 25px 33px;
+    border-radius: 12px;
+    background: url(../images/btn-bg.png);
+    height: 76px;
+    position: relative;
+    bottom: -482px;
+    margin: 0 auto;
+}
+
+.firstScreen__inner{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 160px;
+}
+
+.firstScreen__content{
+    background: rgba(150, 150, 150, 0.25);
+    width: 678px;
+    height: 558px;
+}
