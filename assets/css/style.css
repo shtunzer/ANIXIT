@@ -86,6 +86,7 @@ button{
     background-size: cover;
     background-position: left;
     padding-bottom: 85px;
+    height: 100vh;
 }
 
 .firstScreen-btndownload{
@@ -97,10 +98,6 @@ button{
     padding: 25px 33px;
     border-radius: 12px;
     background: url(../images/btn-bg.png);
-    height: 76px;
-    position: relative;
-    bottom: -482px;
-    margin: 0 auto;
 }
 
 .firstScreen__inner{
@@ -109,8 +106,46 @@ button{
     padding-top: 160px;
 }
 
-.firstScreen__content{
-    background: rgba(150, 150, 150, 0.25);
-    width: 678px;
-    height: 558px;
+.firstScreen__content-title{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 140px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.firstScreen__content-text{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: -30px;
+    margin-bottom: 35px;
+}
+
+.firstScrenn__socials-link{
+    margin-top: 114%;
+    display: inline-block;
+}
+
+.firstScrenn__socials-img{
+    display: block;
+}
+
+.firstScrenn__socials-link + .firstScrenn__socials-link{
+    margin-left: 20px;
+
+}
+
+.firstScreen::after{
+    content: "";
+    position: absolute;
+    background-image: url(../images/line-fs.png);
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
