@@ -185,6 +185,7 @@ button{
     position: absolute;
     top: 0;
     left: 0;
+    
 }
 
 .login-screen{
@@ -196,7 +197,10 @@ button{
 	align-items: center;
     animation: scaleAnimation 0.5s forwards;
     display: flex;
+    
 }
+
+
 
 @keyframes scaleAnimation{
     
@@ -208,6 +212,22 @@ button{
     }
     100% {
         transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+.login-screen.--closing {
+    animation: scaleAnimationReverse 0.5s forwards;
+}
+
+@keyframes scaleAnimationReverse {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(0.1);
     }
 }
 
