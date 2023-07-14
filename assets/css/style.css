@@ -4,6 +4,10 @@ html{
 
 body{
     background: linear-gradient(to right,#060A16 50%, #FFF 65%);
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
 }
 
 *,*::after,
@@ -181,6 +185,7 @@ button{
     position: absolute;
     top: 0;
     left: 0;
+    
 }
 
 .login-screen{
@@ -192,7 +197,10 @@ button{
 	align-items: center;
     animation: scaleAnimation 0.5s forwards;
     display: flex;
+    
 }
+
+
 
 @keyframes scaleAnimation{
     
@@ -204,6 +212,22 @@ button{
     }
     100% {
         transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+.login-screen.--closing {
+    animation: scaleAnimationReverse 0.5s forwards;
+}
+
+@keyframes scaleAnimationReverse {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(0.1);
     }
 }
 
@@ -313,6 +337,13 @@ button{
 .reg__logo-img{
     position: absolute;
     top: 9%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login__logo-img{
+    position: absolute;
+    top: 13%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
