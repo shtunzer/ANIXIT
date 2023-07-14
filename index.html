@@ -19,14 +19,14 @@
                             <img src="assets/images/logo.svg" class="header__logo-img">
                         </a>
                         <ul class="header__list">
-                            <li class="header__list-item"><a href="#" class="header__list-link">Главная</a></li>
+                            <li class="header__list-item"><a href="index.html" class="header__list-link">Главная</a></li>
                             <li class="header__list-item"><a href="#" class="header__list-link">Донат</a></li>
                             <li class="header__list-item"><a href="#" class="header__list-link">Контакты</a></li>
                             <li class="header__list-item"><a href="#" class="header__list-link">Тех-поддержка</a></li>
                         </ul>
                         <div class="header__auth">
-                            <button class="header__auth-btn">Регистрация</button>
-                            <button class="header__auth-btn">Войти</button>
+                            <button class="header__auth-btn" id="reg-open">Регистрация</button>
+                            <button class="header__auth-btn" id="login-open">Войти</button>
                         </div>
                     </nav>
                 </div>
@@ -60,6 +60,72 @@
                 </div>
             </div>
         </footer>
+    </div>
+    <div id="login-bg"></div>
+    <div id="login-popup" class="login-screen">
+    
+        
+
+            <i style="--clr:#e7b81c;"></i>
+            <i style="--clr:#cc0f0f;"></i>
+            <i style="--clr:#ff44f6;"></i>
+    
+            
+            
+            <div class="login">
+                <h2>Вход</h2>
+                <div class="inputBx">
+                    <input type="text" placeholder="Логин">
+                </div>
+                <div class="inputBx">
+                    <input type="password" placeholder="Пароль">
+                </div>
+                <div class="inputBx">
+                    <input type="submit" value="Вход">
+                </div>
+                <div class="links">
+                    <a href="#">Забыл пароль</a>
+                    <a href="#">Регистрация</a>
+                </div>
+            </div>
+            <img src="assets/images/logo.svg" class="login__logo-img"> 
+            <button id="login-hide" class="login-hide">
+                <img src="assets/images/hide.svg" class="login-hide-img">
+            </button>
+    </div>
+    <div id="reg-popup" class="login-screen">
+    
+        
+
+        <i style="--clr:#e7b81c;"></i>
+        <i style="--clr:#cc0f0f;"></i>
+        <i style="--clr:#ff44f6;"></i>
+
+        
+        
+        <div class="login">
+            <h2>Регистрация</h2>
+            <div class="inputBx">
+                <input type="text" placeholder="Логин">
+            </div>
+            <div class="inputBx">
+                <input type="password" placeholder="Пароль">
+            </div>
+            <div class="inputBx">
+                <input type="password" placeholder="Повторно Пароль">
+            </div>
+            <div class="inputBx">
+                <input type="submit" value="Зарегистрироваться">
+            </div>
+            <div class="links">
+                <a href="#">Забыл пароль</a>
+                <a href="#">Вход</a>
+            </div>
+        </div>
+        <img src="assets/images/logo.svg" class="reg__logo-img"> 
+        <button id="reg-hide" class="login-hide">
+            <img src="assets/images/hide.svg" class="login-hide-img">
+        </button>
     </div>
 </body>
     <script src="assets/js/main.js"></script>
